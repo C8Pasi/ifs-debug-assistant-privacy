@@ -1,0 +1,210 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — IFS Cloud Debug Assistant</title>
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --ink: #1a2330;
+    --ink-soft: #4a5568;
+    --muted: #6b7688;
+    --line: #e3e7ec;
+    --accent: #0b3d6e;
+    --accent-soft: #eaf1f8;
+    --maxw: 44rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1420;
+      --surface: #161d2b;
+      --ink: #e8ecf2;
+      --ink-soft: #b3bccb;
+      --muted: #8a94a6;
+      --line: #26303f;
+      --accent: #5aa0e0;
+      --accent-soft: #17263a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0e1420;
+    --surface: #161d2b;
+    --ink: #e8ecf2;
+    --ink-soft: #b3bccb;
+    --muted: #8a94a6;
+    --line: #26303f;
+    --accent: #5aa0e0;
+    --accent-soft: #17263a;
+  }
+  :root[data-theme="light"] {
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --ink: #1a2330;
+    --ink-soft: #4a5568;
+    --muted: #6b7688;
+    --line: #e3e7ec;
+    --accent: #0b3d6e;
+    --accent-soft: #eaf1f8;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: clamp(1.5rem, 4vw, 4rem) clamp(1.1rem, 4vw, 2rem) 4rem;
+  }
+
+  header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.25rem;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: .3rem .6rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    line-height: 1.15;
+    margin: 0 0 .5rem;
+    letter-spacing: -.01em;
+    text-wrap: balance;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: .9rem;
+    margin: 0;
+  }
+
+  section { margin-top: 2.25rem; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 0 0 .6rem;
+    letter-spacing: -.005em;
+  }
+  p { margin: 0 0 1rem; color: var(--ink-soft); }
+  .lead { color: var(--ink); font-size: 1.05rem; }
+
+  ul { margin: 0 0 1rem; padding-left: 0; list-style: none; }
+  li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: .7rem;
+    color: var(--ink-soft);
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    left: .1rem;
+    top: .62em;
+    width: .42rem;
+    height: .42rem;
+    border-radius: 2px;
+    background: var(--accent);
+  }
+  li strong { color: var(--ink); font-weight: 650; }
+
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px;
+    padding: 1.1rem 1.25rem;
+    margin-top: 1.25rem;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover { border-bottom-color: currentColor; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .88rem;
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Privacy Policy</span>
+    <h1>IFS Cloud Debug Assistant</h1>
+    <p class="updated">Last updated: 30 September 2026</p>
+  </header>
+
+  <p class="lead">
+    IFS Cloud Debug Assistant is a browser extension that helps users and administrators
+    understand errors that occur in IFS Cloud. When an error or access-denied message appears,
+    it captures the related API request and shows the projection, action, status, and error
+    details, and can look up and grant the permission-set access needed to resolve it.
+  </p>
+
+  <section>
+    <h2>Data the extension handles</h2>
+    <ul>
+      <li><strong>Connection settings you enter</strong> — the IFS base URL, realm, and the permission-lookup client credentials you provide in the extension's Settings.</li>
+      <li><strong>Error details from IFS Cloud</strong> — for requests that result in an error, the extension records the page URL, page title, time, HTTP status, and the request and response content. This content can include information such as a username referenced in the error.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How the data is used</h2>
+    <p>
+      The data is used solely to detect, display, and help resolve IFS Cloud errors within the
+      extension's side panel — and, when you choose, to look up and grant the permission-set
+      access that resolves them.
+    </p>
+  </section>
+
+  <section>
+    <h2>Where the data goes</h2>
+    <div class="callout">
+      <p>
+        All captured data and settings are stored <strong>locally in your browser</strong> using
+        Chrome's storage. The extension communicates only with the IFS Cloud server you configure,
+        using the credentials you provide.
+      </p>
+      <p>
+        The extension does <strong>not</strong> send your data to the developer or to any third
+        party, and does not sell or transfer your data.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Data retention</h2>
+    <p>
+      Captured error records and settings remain in your browser until you clear them — using the
+      extension's Clear action, or by removing the extension.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy can be sent to
+      <a href="mailto:mpasindu72@gmail.com">mpasindu72@gmail.com</a>.
+    </p>
+  </section>
+
+  <footer>
+    IFS Cloud Debug Assistant is an independent tool and is not affiliated with or endorsed by IFS.
+  </footer>
+</div>
+</head></html>
